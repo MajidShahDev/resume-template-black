@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: hsl(0, 0%, 96%);
+  font-family: "montserrat", sans-serif;
+  position: relative;
+}
+
+.resume-container {
+  background-color: hsl(0, 0%, 0%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 66%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(10, 10, 10, 1) 100%
+  );
+  height: 1123px;
+  width: 794px;
+  position: relative;
+}
+
+.top-section {
+  padding-top: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  display: flex;
+  width: 206px;
+  position: relative;
+  margin-right: 41.4px;
+  margin-bottom: 50px;
+}
+
+.profile-image {
+  height: 206px;
+  width: 206px;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.circle-profile-image {
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  z-index: 0;
+}
+
+.circles-background {
+  position: absolute;
+  top: 375px;
+  right: 0;
+}
+
+.r-box {
+  position: absolute;
+  top: -60px;
+  left: 388px;
+}
+
+.heading::before {
+  content: "";
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  padding-bottom: 30px;
+  vertical-align: middle;
+}
+
+.contacts-heading::before {
+  background-image: url("svg/contact-icon.svg");
+}
+.skills-heading::before {
+  background-image: url("svg/skills-icon.svg");
+}
+.languages-heading::before {
+  background-image: url("svg/languages-icon.svg");
+  padding-bottom: 27px;
+}
+.certificates-heading::before {
+  background-image: url("svg/certificates-icon.svg");
+  padding-bottom: 27px;
+}
+.education-heading::before {
+  background-image: url("svg/education-icon.svg");
+}
+.experience-heading::before {
+  background-image: url("svg/experience-icon.svg");
+}
+
+.intro-section {
+  padding-top: 5px;
+  width: 448.5px;
+  height: fit-content;
+  position: relative;
+}
+
+.full-name {
+  letter-spacing: 0.5px;
+  line-height: 5px;
+  font-size: 41.5px;
+  font-weight: 600;
+  margin: 45px 0;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.job-title {
+  letter-spacing: 1px;
+  font-size: 15.7px;
+  font-weight: 600;
+}
+
+.introduction {
+  margin-top: 30px;
+  font-size: 12px;
+  line-height: 18px;
+  color: hsl(0, 0%, 70%);
+}
+
+/* INFO SECTION */
+.info-section {
+  display: flex;
+  justify-content: center;
+}
+
+.column-1 {
+  width: 206px;
+  margin-right: 41.4px;
+}
+.column-2 {
+  width: 448.5px;
+}
+
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 19.3px;
+  margin-top: 35px;
+  padding-bottom: 14px;
+}
+
+.contacts-heading,
+.education-heading {
+  margin-top: -0px;
+}
+
+.title {
+  font-weight: 600;
+  padding-top: 5px;
+  font-size: 14.6px;
+  padding-bottom: 8px;
+}
+
+.email,
+.phone,
+.website,
+.address {
+  font-size: 13.3px;
+  line-height: 23px;
+  color: hsl(0, 0%, 70%);
+}
+
+.skill-set {
+  font-size: 12px;
+  line-height: 23px;
+  color: hsl(0, 0%, 70%);
+}
+
+.language-level {
+  font-size: 13px;
+  color: hsl(0, 0%, 70%);
+}
+.language-seprator {
+  font-size: 13px;
+  color: hsl(0, 0%, 70%);
+  padding: 0 5px 0 5px;
+}
+
+.date {
+  font-size: 12px;
+  letter-spacing: 0.7px;
+  color: hsl(0, 0%, 70%);
+  font-weight: 600;
+}
+
+.heading-experience {
+  padding-bottom: 0px;
+}
+
+.date-experience {
+  margin-bottom: 15px;
+}
+
+.exp-points-container {
+  margin-bottom: 15px;
+}
+
+.exp-point {
+  font-size: 12px;
+  position: relative;
+  margin-left: 5px;
+  padding-left: 1.1em;
+  padding-bottom: 0.6em;
+  text-indent: 0;
+  list-style: none;
+  line-height: 18px;
+  color: hsl(0, 0%, 70%);
+}
+
+.exp-point::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 1.5em;
+  line-height: 0.9;
+}
